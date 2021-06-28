@@ -125,7 +125,7 @@ class HomeFragment : Fragment() , OnMapReadyCallback , GoogleMap.OnMarkerClickLi
                 searchDialogPark.show()
             }
             R.id.see_cars_btn -> {
-                startActivity(Intent(context,FindYourCarActivity::class.java))
+                startActivity(Intent(context,CarsActivity::class.java))
             }
         }
     }

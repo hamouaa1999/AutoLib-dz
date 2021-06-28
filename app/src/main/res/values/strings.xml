@@ -1,4 +1,35 @@
 <resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string-array name="cards">
+        <item>Card Credit</item>
+        <item>Card Abonnement</item>
+    </string-array>
+    <string name="do_pay">Are you sure to pay with this payment card ?</string>
+    <string name="confirm">Confirm</string>
+    <string name="ur_card">My subscription card</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_abon">Create subscription card</string>
+    <string name="total">Total of points you have</string>
+    <string name="select">Select code promo</string>
+    <string name="point_buy">Buy points</string>
+    <string name="SucdialogTitle">Payment Successfull !</string> dialogMessage
+    <string name="SucdialogMessage">Your payment is sent with success, a Bill has been sent to your email</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mat">Matricule :</string>
+    <string name="mat_v"> 115 119 25634</string>
+    <string name="model">Model :</string>
+
+
+
     <string name="app_name">AutoLib DZ</string>
     <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
     <string name="pay">Payer</string>

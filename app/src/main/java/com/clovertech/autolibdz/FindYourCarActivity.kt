@@ -113,7 +113,7 @@ class FindYourCarActivity : AppCompatActivity() {
         try {
             val opts = IO.Options()
             opts.path = "/socket"
-            mSocket = IO.socket("http://192.168.43.222:8123", opts)
+            mSocket = IO.socket("http://54.37.87.85:7000", opts)
         } catch(e: URISyntaxException) {
             e.printStackTrace()
         }
@@ -126,8 +126,9 @@ class FindYourCarActivity : AppCompatActivity() {
         val name: String = mBluetoothAdapter.name
         jsonInfosObj.put("nom", name)
         jsonInfos.put("locataire", jsonInfosObj)
-        Toast.makeText(this, "Discover peers button Clicked ...", Toast.LENGTH_SHORT).show()
         mSocket.emit("demande vehicule", jsonInfos)
+
+        // end location { idLoc }
 
         val acceptThread = AcceptThread(this)
         acceptThread?.start()
@@ -200,7 +201,6 @@ private class AcceptThread(
             val socket: BluetoothSocket? = try {
 
                 val bluetoothSocket = mmServerSocket?.accept()
-                activity.runOnUiThread { Toast.makeText(activity, "Change the UI to indicate that the connexion has been done successfully!", Toast.LENGTH_LONG).show() }
                 bluetoothSocket
             } catch (e: IOException) {
                 Log.e(ContentValues.TAG, "Socket's accept() method failed", e)
